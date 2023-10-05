@@ -1,0 +1,38 @@
+.sectionWrapper {
+    margin-top: 91px;
+    height: 124px;
+}
+
+.block {
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+}
+
+.ourClientInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 336px;
+}
+
+.header {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #757575;
+    max-width: 336px;
+}
+
+.ourClientLogo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}

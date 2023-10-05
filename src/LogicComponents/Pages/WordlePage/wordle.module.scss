@@ -1,0 +1,29 @@
+.wordlePageWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0;
+  background-color: #d1e6ff;
+  height: calc(100vh - 50px);
+}
+
+.wordleWrapper {
+  width: 1159px;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8da0ff;
+  border-radius: 30px;
+}
+
+.wordleField {
+  width: 760px;
+  height: 850px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}

@@ -1,0 +1,137 @@
+.contactPageWrapper {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0;
+  background-color: #d1e6ff;
+}
+
+.contactForm {
+  width: 1238px;
+  height: 725px;
+  display: flex;
+  justify-content: space-between;
+
+  section {
+    height: 100%;
+    width: 565px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.mineInfoField {
+  width: 100%;
+  height: 558px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .talkSection {
+    height: 192px;
+    color: #000;
+    font-style: normal;
+    line-height: normal;
+    h1 {
+      font-size: 64px;
+    }
+    span {
+      font-size: 20px;
+    }
+  }
+  .emailSection {
+    height: 85px;
+
+    h1 {
+      font-size: 32px;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+  .socialsSection {
+    height: 173px;
+
+    h1 {
+      font-size: 32px;
+    }
+    a {
+      font-size: 16px;
+      color: #000;
+      text-decoration: underline!important;
+      cursor: pointer;
+    }
+  }
+}
+
+.userInfoField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .userField {
+    margin-top: 28px;
+  }
+
+  .userField:first-child{
+    margin-top: 0;
+  }
+
+  section {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    span {
+      font-size: 14px;
+    }
+    input {
+      width: 100%;
+      border: none;
+      height: 46px;
+      padding-left: 16px;
+      outline-width: 0;
+    }
+    select {
+      width: 100%;
+      border: none;
+      height: 46px;
+      padding-left: 16px;
+      outline-width: 0;
+    }
+    textarea {
+      width: 100%;
+      height: 165px;
+      resize: none;
+      outline-width: 0;
+      padding: 8px;
+    }
+  }
+  button {
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    height: 56px;
+    margin-top: 28px;
+  }
+}

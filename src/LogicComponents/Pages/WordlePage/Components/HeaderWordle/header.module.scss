@@ -1,0 +1,25 @@
+.head {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.square {
+  display: flex;
+  width: 100px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 2px solid rgba(225, 250, 255, 0.5);
+  background: rgba(0, 255, 25, 0.25);
+  backdrop-filter: blur(8px);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+
+  &:nth-child(even) {
+    background: rgba(132, 248, 255, 0.1);
+  }
+}

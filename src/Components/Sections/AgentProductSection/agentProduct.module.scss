@@ -1,0 +1,87 @@
+.sectionWrapper {
+    width: 100%;
+    margin-top: calc(91px + 51px);
+    display: flex;
+    justify-content: space-between;
+    height: 648px;
+}
+
+.productInfoSide {
+    width: 618px;
+    padding-top: 123px;
+    padding-left: 52px;
+}
+
+.productCard {
+    width: 471px;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.description {
+    line-height: 25.6px;
+    color: #565656;
+}
+
+.btn {
+    position: relative;
+    padding: 20px 40px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.065em;
+    border-radius: 60px;
+    background-color: #2639ED;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn::before {
+    position: absolute;
+    content: url(./img/dotOrnament.svg);
+    top: 50%;
+    left: -52px;
+    z-index: -1;
+    cursor: default;
+    pointer-events: none; //супер важная штука
+}
+
+.productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; //растягивание картинки на всю высоту в данном случае
+}
+
+.productImageSide {
+    position: relative;
+    width: 1054px;
+    height: calc(100% - calc(28% / 2));
+}
+
+.productImageSide::before {
+    content: url(./img/ellipse85.svg);
+    position: absolute;
+    top: 0;
+    left: - calc(100% * 64.5 / 1054);
+    z-index: -1;
+    height: 129px;
+}
+
+.productImageSide::after {
+    content: url(./img/rectangle23.svg);
+    position: absolute;
+    bottom: - calc(32% / 2);
+    z-index: -1;
+    right: 120px;
+    height: 178px;
+}

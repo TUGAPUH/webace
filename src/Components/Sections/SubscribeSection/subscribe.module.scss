@@ -1,0 +1,129 @@
+.sectionWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 88px 50px 0;
+    height: 387px;
+}
+
+.background {
+    position: relative;
+    display: flex;
+    background: url(./img/Background.svg);
+    background-repeat: no-repeat;
+    width: 1197px;
+    height: 292px;
+    margin: 0;
+}
+
+.background::before {
+    position: absolute;
+    content: url(./img/LBPseudo.svg);
+    z-index: -1;
+    bottom: -39px;
+    left: -38px;
+    height: 178px;
+}
+
+.background::after {
+    position: absolute;
+    content: url(./img/RTPseudo.svg);
+    z-index: -1;
+    top: -56px;
+    right: -37px;
+    height: 154px;
+}
+
+.emailBlock::after {
+    position: absolute;
+    content: url(./img/InlinePseudo.svg);
+    z-index: 2;
+    float: right;
+    right: 0;
+    top: 0;
+}
+
+.infoBlock {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        width: 395px;
+        margin: 0;
+    }
+
+    span {
+        font-size: 18px;
+        line-height: 29px;
+        color: #757575;
+        width: 446px;
+        padding-top: 18px;
+    }
+}
+
+.emailBlock {
+    width: 577px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    form {
+        width: 479px;
+        height: 80px;
+        position: relative;
+        z-index: 3;
+    
+        input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            border: 1px solid #F1F1F1;
+            box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+            border-radius: 60px;
+            font-size: 20px;
+            line-height: 19px;
+            font-family: 'Lato';
+            padding-left: 34px;
+            padding-right: calc(184px + 20px);
+            outline: none;
+        }
+    
+        input::placeholder {
+            font-size: 16px;
+            line-height: 19px;
+            font-family: 'Lato';
+            font-style: normal;
+            color: #959595;
+        }
+    
+        button {
+            position: absolute;
+            width: 184px;
+            height: 59px;
+            background: #2639ED;
+            border-radius: 60px;
+            color: #fff;
+            z-index: 4;
+            border: none;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.065em;
+            right: 14px;
+            top: 10px;
+            cursor: pointer;
+        }
+    }
+}

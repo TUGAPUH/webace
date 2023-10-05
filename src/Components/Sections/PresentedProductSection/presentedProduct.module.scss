@@ -1,0 +1,63 @@
+.sectionWrapper {
+    display: flex;
+    height: 436px;
+    justify-content: space-between;
+    margin-top: 96px;
+}
+
+.videoBlock {
+    width: 550px;
+    height: 372px;
+}
+
+.video {
+    position: relative;
+    background: url(./img/videoImg.png) white;
+    background-repeat: no-repeat;
+    background-size: 550px 372px;
+    height: 100%;
+}
+
+.video::before {
+    content: url(./img/playButton.svg);
+    position: absolute;
+    top: 43%;
+    left: 43%;
+}
+
+.video::after {
+    content: url(./img/Ellipse86.svg);
+    position: absolute;
+    z-index: -1;
+    bottom: -64px;
+    left: 462px;
+}
+
+.descriptBlock {
+    display: flex;
+    flex-direction: column;
+    padding-top: 58px;
+
+    h1 {
+        position: relative;
+        max-width: 468px;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 48px;
+    }
+
+    h1::before{
+        position: absolute;
+        content: url(./img//Rectangle26.svg);
+        z-index: -1;
+        top: -24px;
+        left: -39px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 25.6px;
+        color: #565656;
+        max-width: 532px;
+    }
+}

@@ -1,0 +1,281 @@
+.chatPageWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0;
+  background-color: #D1E6FF;
+  height: calc(100vh - 50px);
+}
+
+.chat {
+  width: 660px;
+  height: 880px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  section {
+    width: 630px;
+    position: relative;
+    z-index: 2;
+    height: 45px;
+    margin: 15px;
+
+    input {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #989ba1;
+      border-radius: 3px;
+      padding: 0 120px 0 15px;
+      outline: none;
+      font-family: "Lato";
+    }
+
+    input::placeholder {
+      font-size: 15px;
+      color: #989ba1;
+    }
+
+    .btnsBlock {
+      position: absolute;
+      right: 0;
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 5px 10px 5px 0;
+
+      button {
+        border: none;
+        background: #fff;
+        padding: 0;
+        width: 28px;
+        height: 28px;
+
+        img {
+          width: 20px;
+        }
+      }
+
+      .imageUpload {
+        border: none;
+        background: #fff;
+        padding: 0;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        label {
+          img {
+            width: 20px;
+            cursor: pointer;
+          }
+        }
+
+        input {
+          display: none;
+        }
+      }
+
+      button:last-child {
+        background: #1d75dd;
+        border-radius: 2px;
+        width: 35px;
+        height: 35px;
+
+        img {
+          width: 23px;
+        }
+      }
+    }
+  }
+}
+
+.textField {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 785px;
+  overflow-y: auto;
+}
+
+.messageWithAvatar {
+  position: relative;
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.messageWithAvatar:hover {
+  background-color: #ebebeb;
+}
+
+.pseudoMine {
+  display: none;
+}
+
+.messageWithAvatar:hover .pseudoMine {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.pseudoOpponent {
+  display: none;
+}
+
+.messageWithAvatar:hover .pseudoOpponent {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.zoomImage {
+  transition: transform ease-in-out 0.3s;
+}
+
+.zoomImage:hover {
+  transform: scale(1.5);
+}
+
+/* ChatElements */
+
+.messageMine {
+  background: #d1e6ff;
+  border-radius: 5px;
+  max-width: 470px;
+  padding: 10px;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.messageOpponent {
+  border-radius: 5px;
+  max-width: 470px;
+  border: 1px solid #1d75dd;
+  padding: 10px;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.flexMessageO {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  padding-left: 80px;
+}
+
+.flexMessageM {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding-right: 80px;
+}
+
+.time {
+  color: #989ba1;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.dateMessage {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line {
+  width: 220px;
+  height: 1px;
+  background: #989ba1;
+  opacity: 0.2;
+  border-radius: 10px;
+}
+
+.timeBlock {
+  max-width: 80px;
+  padding: 0 !important;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.positionAvaL {
+  left: 15px;
+}
+
+.positionAvaR {
+  right: 15px;
+}
+
+.editField {
+  display: flex;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #e2e2e2;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  border-top: 0px solid #989ba1;
+  border-left: 1px solid #989ba1;
+  border-right: 1px solid #989ba1;
+  border-radius: 15px 15px 0px 0px;
+  font-family: "Lato";
+  transform: translateY(100%);
+
+  .imgBlock {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .flexBlock {
+    display: flex;
+    align-items: center;
+
+    .popup {
+      width: 545px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      user-select: none;
+    }
+  }
+
+  .inputBlock {
+    position: relative;
+
+    input {
+      position: absolute;
+      z-index: 4;
+    }
+  }
+}
+
+/* ChatElements */

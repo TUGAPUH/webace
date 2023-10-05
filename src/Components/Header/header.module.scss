@@ -1,0 +1,97 @@
+@function toRem($val) {
+  $remVal: calc($val / 16) + rem;
+  @return $remVal;
+}
+
+/* General */
+
+a {
+  text-decoration: none !important;
+  position: relative;
+}
+
+a:after {
+  width: 0;
+  background: #0d1821;
+  height: 3px;
+  transition: all 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+}
+
+a.underline:after {
+  width: 100%;
+  left: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 !important;
+}
+
+/* General */
+
+.headerWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.headerLogo {
+  line-height: 33px;
+  width: 150px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  align-items: center;
+}
+
+.item {
+  margin-right: 62px;
+
+  button {
+    background-color: inherit !important;
+    border: none;
+    color: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  button:hover {
+    color: rgb(92, 157, 231);
+  }
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 88px;
+  z-index: 6;
+  background-color: rgb(212, 245, 247);
+}
+
+.opacityHeader {
+  opacity: 0.5;
+}
+
+.itemLink {
+  color: inherit;
+}
+
+.itemLink:hover,
+.itemLink:focus {
+  opacity: 0.75;
+}

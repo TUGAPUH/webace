@@ -1,0 +1,146 @@
+.mainWidth {
+    width: 100%;
+}
+
+.footerWrapper {
+    height: 348px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #E4E4E4;
+    margin-top: 91px;
+    margin-bottom: 23px;
+    padding-top: 60px;
+}
+
+.infoBlock {
+    width: 100%;
+    height: 164px;
+    display: flex;
+    justify-content: space-around;
+
+
+    .descriptionBlock {
+        width: 270px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            width: 109px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            margin: 0;
+        }
+
+        span {
+            color: #565656;
+            font-size: 14px;
+            line-height: 22px;
+            width: 100%;
+            padding-top: 27px;
+        }
+    }
+
+    .ulBlock1 {
+        width: 150px;
+        height: 100%;
+
+        h1 {
+            width: 120px;
+        }
+    }
+
+    .ulBlock2 {
+        width: 104px;
+        height: 100%;
+
+        h1 {
+            width: 84px;
+        }
+    }
+
+    .ulBlock3 {
+        width: 71px;
+        height: 100%;
+
+        h1 {
+            width: 71px;
+        }
+    }
+
+    .ulBlock4 {
+        width: 70px;
+        height: 100%;
+
+        h1 {
+            width: 70px;
+        }
+    }
+}
+
+.ulH1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.ulBlock {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+        padding-left: 0;
+        margin: 0;
+        padding-top: 25px;
+        width: 100%;
+        list-style-type: none;
+
+        li a {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 28px;
+            color: #000000;
+        }
+    }
+}
+
+.imgsOfSupportCenter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgsOfSupport {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    height: 36px;
+    margin-top: 20px;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.bottomLine {
+    width: 100%;
+    border-top: 1px solid #F1F1F1;
+    margin-top: 29px;
+}
+
+.copyRight {
+    margin-top: 17px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    span {
+        font-size: 14px;
+        line-height: 22px;
+        color: #A4A4A4;
+
+    }
+}

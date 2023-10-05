@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/webace/static/css/main.d6e09c01.css",
-    "main.js": "/webace/static/js/main.1302b4db.js",
+    "main.js": "/webace/static/js/main.96b6440b.js",
     "static/media/agentProduct.svg": "/webace/static/media/agentProduct.ef1584290068ce93eeff7cd2ad184d24.svg",
     "static/media/Group71Rofl.svg": "/webace/static/media/Group71Rofl.4fc780a17ce97e5f1decc170c66c73ac.svg",
     "static/media/videoImg.png": "/webace/static/media/videoImg.85007c96ac0546cd34c8.png",
@@ -65,10 +65,10 @@
     "static/media/Ellipse86.svg": "/webace/static/media/Ellipse86.dc52f2ffc3624afeb29f.svg",
     "static/media/ellipse85.svg": "/webace/static/media/ellipse85.476ed9719f2b8ef47c78.svg",
     "main.d6e09c01.css.map": "/webace/static/css/main.d6e09c01.css.map",
-    "main.1302b4db.js.map": "/webace/static/js/main.1302b4db.js.map"
+    "main.96b6440b.js.map": "/webace/static/js/main.96b6440b.js.map"
   },
   "entrypoints": [
     "static/css/main.d6e09c01.css",
-    "static/js/main.1302b4db.js"
+    "static/js/main.96b6440b.js"
   ]
 }

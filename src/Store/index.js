@@ -7,5 +7,5 @@ export default configureStore({
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({
         serializableCheck: false
-    }), //Крутой проигнорировал сериализацию!! Да, я
+    }),
 })

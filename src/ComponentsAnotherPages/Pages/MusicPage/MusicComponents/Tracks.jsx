@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import style from "../music.module.scss";
 import More from "../img/more-vertical.svg";
 import { StartStopBtn } from "./StartStopBtn";
-import { Loader } from "../../../../Components/Loader/Loader";
+import { Loader } from "../../../../ComponentsHeaderAndHomePage/Loader/Loader";
 
 export const Tracks = ({
   musicList,

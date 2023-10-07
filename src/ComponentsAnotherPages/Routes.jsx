@@ -21,5 +21,3 @@ export const privateRoutes = [
     component: <WordlePage />,
   },
 ];
-
-export const publicRoutes = [];

@@ -1,10 +1,8 @@
 import React, { useRef } from "react";
 import style from "./contact.module.scss";
-import { InputContact } from "./ContactModules/InputContact";
-import { SelectContact } from "./ContactModules/SelectContact";
-import { SubmitBtn } from "./ContactModules/SubmitBtn";
+import { InputContact } from "./ContactComponents/InputContact";
+import { SelectContact } from "./ContactComponents/SelectContact";
 import emailjs from "@emailjs/browser";
-import { MessageContact } from "./ContactModules/MessageContact";
 import toast, { Toaster } from "react-hot-toast";
 
 const ContactPage = () => {
@@ -66,7 +64,7 @@ const ContactPage = () => {
             <section className={style.socialsSection}>
               <h1>Socials</h1>
               <a href="https://t.me/ChizhovDanila">Telegram</a>
-              <a href="https://vk.com/absentnow" >Vk</a>
+              <a href="https://vk.com/absentnow">Vk</a>
             </section>
           </div>
         </section>
@@ -91,9 +89,9 @@ const ContactPage = () => {
             })}
             <section className={style.userField} style={{ height: "201px" }}>
               <span>Message</span>
-              <MessageContact />
+              <textarea name="message" required id="message"></textarea>
             </section>
-            <SubmitBtn />
+            <button>Submit</button>
           </form>
         </section>
       </div>

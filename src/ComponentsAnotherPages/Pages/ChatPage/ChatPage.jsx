@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import style from './chat.module.scss';
 import { db } from '../../../Firebase/firebaseInit';
-import { Loader } from '../../../Components/Loader/Loader';
+import { Loader } from '../../../ComponentsHeaderAndHomePage/Loader/Loader';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { collection, orderBy, query } from 'firebase/firestore';
 import { TextField } from './ChatElements';

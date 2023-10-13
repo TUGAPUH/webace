@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import Header from "./ComponentsHeaderAndHomePage/Header/Header"
+import Header from "./ComponentsHeaderAndHomePage/Header/Header";
 import AppRouter from "./ComponentsAnotherPages/AppRouter";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { auth } from "./Firebase/firebaseInit";

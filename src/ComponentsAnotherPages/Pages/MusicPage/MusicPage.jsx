@@ -17,6 +17,7 @@ const MusicPage = () => {
   const [currentPlayTrack, setCurrentPlayTrack] = useState({});
   const [isStartPlayable, setIsStartPlayable] = useState(false);
   const [sortedMusicList, setSortedMusicList] = useState(null);
+  const [musicVolume, setMusicVolume] = useState(1);
   const playerFooterRef = useRef();
 
   useEffect(() => {
@@ -54,7 +55,7 @@ const MusicPage = () => {
               currentPlayTrack={currentPlayTrack}
               musicList={musicList}
             />
-            <VolumeBarControls currentAudioRef={currentAudioRef} />
+            <VolumeBarControls setMusicVolume={setMusicVolume} musicVolume={musicVolume} currentAudioRef={currentAudioRef} />
           </div>
           <TrackBar
             currentAudioRef={currentAudioRef}

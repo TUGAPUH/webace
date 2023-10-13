@@ -1,15 +1,21 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Volume from "../img/volume.svg";
 import style from "../music.module.scss";
 
-const VolumeBarControls = ({ currentAudioRef }) => {
+const VolumeBarControls = ({ currentAudioRef, setMusicVolume, musicVolume }) => {
   const volumeRef = useRef();
+
+  useEffect(() => {
+    if(currentAudioRef.ref){
+      currentAudioRef.ref.current.volume = musicVolume;
+    }
+  }, [musicVolume, currentAudioRef.ref])
 
   const changeVolume = (e) => {
     const offset = e.nativeEvent.offsetX;
     let width = volumeRef.current.clientWidth;
-
-    currentAudioRef.ref.current.volume = offset / width;
+    console.log(offset / width);
+    setMusicVolume(offset / width);
   };
 
   return (
@@ -20,7 +26,7 @@ const VolumeBarControls = ({ currentAudioRef }) => {
         onClick={changeVolume}
         ref={volumeRef}
         style={{
-          "--volumeWidth": currentAudioRef?.ref?.current.volume * 100 + "%",
+          "--volumeWidth": musicVolume * 100 + "%",
         }}
       ></div>
     </div>
